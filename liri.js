@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-//Imports for all of the required packages
+//Imports for all of the required packages in order to run API calls.
 
 var spotify = require("node-spotify-api");
 var keys = require("./keys");
@@ -119,11 +119,11 @@ var pick = function(caseData, functionData) {
     case "movie-this":
       getMovie(functionData);
       break;
-    case "do-what-it-says":
+    case "just-do-it":
       doWhatItSays();
       break;
     default:
-      console.log("LIRI doesn't know that");
+      console.log("Chill Bro.");
   }
 };
 
